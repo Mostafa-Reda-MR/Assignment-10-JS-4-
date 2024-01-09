@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="images/login.png">
+        <title>Sign In</title>
+
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    
+    <body>
+        <section class="bg-img d-flex flex-column justify-content-center align-items-center">
+            <div class="bg-layer w-75 rounded-5 d-flex flex-column align-items-center">
+
+                <h2 class="text-info fs-1 fw-semibold pt-3 pb-2 fst-italic">Smart SignIn System</h2>
+
+                <div class="w-75">
+                    <div class="w-100 d-flex">
+                        <i class="fa-solid fa-envelope text-info fa-xl pt-4 pe-3"></i>
+                        <input type="email" id="emailLoginInput" class="form-control py-2 my-2" placeholder="Your Email"/>
+                    </div>
+                    <div class="w-100 d-flex">
+                        <i class="fa-solid fa-lock text-info fa-xl pt-4 pe-3"></i>
+                        <input type="password" id="passwordLoginInput" class="form-control py-2 my-2" placeholder="Your Password"/>
+                    </div>
+                    <div class="warningMessage d-flex justify-content-center">
+                        <p id="alertMessage" class="d-none fs-4 fw-bolder text-center rounded-pill px-3 mb-0"></p>
+                    </div>
+                </div>
+
+                <div class="btns">
+                    <button id="loginBtn" class="btn btn-outline-info fw-bolder my-3 py-2 px-3">Sign In</button>
+                </div>
+
+                <h3 class="text-white fs-6 mb-4">Don’t have an account ? <a href="signup.html" id="btnSignUp" class="text-info">Sign Up</a> </h3>
+
+            </div>
+        </section>
+
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/login.js"></script>
+    </body>
+</html>
